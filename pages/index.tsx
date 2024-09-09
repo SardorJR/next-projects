@@ -11,105 +11,216 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-
+import Layout from "./layout/Layout"
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              pages/index.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    
+     <Layout>
+      <div className="background-2">
+        <div className="background-image2">
+          <div className="wrap">
+            <img className="a" src="/images/Vector (26).png" alt="" />
+            <img className="aa" src="/images/Vector (27).png" alt="" />
+            <center>
+              <span className="titles">
+                We believe that <span className="italic">technology</span> can{" "}
+                <span className="white">change</span> the world.
+              </span>
+              <p>
+                That's why we're committed to delivering innovative IT solutions
+                to businesses of all sizes. Our team of experienced
+                professionals is dedicated to helping you achieve your goals and
+                thrive in a rapidly evolving digital landscape.
+              </p>
+            </center>
+            <div className="successfull-projects">
+              <div className="item-projects">
+                <h2>500+</h2>
+                <p>Successful Projects</p>
+              </div>
+              <div className="borders"></div>
+              <div className="item-projects">
+                <h2>98%</h2>
+                <p>Satisfied Clients</p>
+              </div>
+              <div className="borders"></div>
+              <div className="item-projects">
+                <h2>35+</h2>
+                <p>Handled Countries</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+      <div className="container">
+        <div className="Client-box">
+          <h2>Client Stories</h2>
+          <img src="/images/Arrow Icon.png" alt="" />
+        </div>
+        <div className="flex">
+          <div className="item-flex">
+            <h2>Amazing!</h2>
+            <p>
+              “WaveNet's cybersecurity solution gave us the peace of mind we
+              needed to focus on our business. They took the time to understand
+              our unique needs and created a solution that protected our
+              sensitive data and ensured compliance with industry regulations.”
+            </p>
+            <div className="column">
+              <div className="left">
+                <span className="name">Tom Johnson</span>
+                <span className="descr">CIO of Mika Medika Healthcare</span>
+              </div>
+              <div className="right">
+                <button>
+                  <img src="/images/Image Placeholder.png" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="brdr"></div>
+          <div className="item-flex">
+            <h2>Best Service</h2>
+            <p>
+              “We were struggling to keep up with the demands of our growing
+              business until we partnered with WaveNet. Their custom software
+              development solution has helped us streamline our operations and
+              improve efficiency, saving us time and money.”
+            </p>
+            <div className="column">
+              <div className="left">
+                <span className="name">Jane Doe</span>
+                <span className="descr">COO of DEF Manufacturing</span>
+              </div>
+              <div className="right">
+                <button>
+                  <img src="/images/Image Placeholder (1).png" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="icons">
+          <img src="/images/Logo 1.png" alt="" />
+          <img src="/images/Logo 4.png" alt="" />
+          <img src="/images/Logo 3.png" alt="" />
+          <img src="/images/g887.png" alt="" />
+        </div>
+      </div>
+      <div className="background3">
+        <div className="wrap">
+          <center>
+            <h2>Services</h2>
+          </center>
+          <div className="develoment">
+            <div className="item">
+              <span>Web Development</span>
+              <img src="/images/Arrow Icon (1).png" alt="" />
+            </div>
+            <div className="item">
+              <span>Mobile Development</span>
+              <img src="/images/Arrow Icon (1).png" alt="" />
+            </div>
+            <div className="item-hard">
+              <div className="left">
+                <span>Cyber Security</span>
+                <p>
+                  Our cyber security service provides advanced protection for
+                  your data and systems against potential threats and attacks,
+                  ensuring your business operates securely and efficiently.
+                </p>
+                <img src="/images/Group (11).png" alt="" />
+              </div>
+              <div className="right">
+                <div className="border-img">
+                  <img src="/images/Image Placeholder (2).png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="item">
+              <span>Digital Marketing</span>
+              <img src="/images/Arrow Icon (1).png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="back-img">
+        <div className="wrap">
+          <div className="projects-container">
+            <div className="elem">
+              <h2>Projects</h2>
+              <div className="image">
+                <div className="texts">
+                  <p> 2022</p>
+                  <span>Uwang Corp.</span>
+                </div>
+              </div>
+            </div>
+            <div className="elem2">
+              <p>
+                As an IT company, we pride ourselves on delivering customized
+                solutions that meet our clients' unique needs. Our projects
+                highlight our expertise in web & mobile development, cloud
+                computing, cybersecurity, and digital marketing.
+              </p>
+              <div className="box">
+                <center>
+                  <p>C Y B E R S E C U R I T Y</p>
+                  <h3>Mika Medika</h3>
+                  <h4>
+                    Mika Medika Healthcare, a large hospital network, was
+                    concerned about the security of their patient data.
+                  </h4>
+                  <button>
+                    <span>READ MORE</span>
+                    <img src="" alt="" />
+                  </button>
+                </center>
+              </div>
+            </div>
+          </div>
+          <div className="any-questions">
+            <div className="item">
+              <h2>
+                Got Any <br /> Questions?
+              </h2>
+              <button>
+                <span>ASK A QUESTION</span>
+                <img src="/images/Arrow Icon (2).png" alt="" />
+              </button>
+            </div>
+            <div className="item_2">
+              <div className="item-ml">
+                <span>What services does WaveNet offer?</span>
+                <span>+</span>
+              </div>
+              <div className="item-ml">
+                <span>What services does WaveNet offer?</span>
+                <span>+</span>
+              </div>
+              <div className="hard">
+                <div className="left">
+                  <h2>How much do the services cost?</h2>
+                  <p>
+                    Our pricing varies based on the specific services and needs
+                    of your business. We offer flexible pricing options to suit
+                    your budget and requirements. Contact us to learn more.
+                  </p>
+                </div>
+                <div className="right">
+                  <span>-</span>
+                </div>
+              </div>
+              <div className="item-ml">
+                <span>What services does WaveNet offer?</span>
+                <span>+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+      </Layout>
   );
 }
